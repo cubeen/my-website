@@ -2,5 +2,8 @@ title: Jakub's Digital Garden
 description: A simple static site powered by Jekyll and GitHub Pages.
 author: Jakub
 
+# Set the repository path so Jekyll knows where the site lives on GitHub Pages
+baseurl: "/my-website"
+
 # Jekyll build settings
 markdown: kramdown
