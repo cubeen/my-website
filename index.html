@@ -4,4 +4,13 @@ title: Home Page
 ---
 
 <h1>Welcome to My Jekyll Site</h1>
-<p>This is my very first Jekyll-powered page!</p>
+<p>Here are my latest posts:</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span>- {{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
