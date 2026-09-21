@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
 </head>
 <body>
 
-    <nav>
-        <a href="/">Home</a>
-    </nav>
+    <header>
+        <h2><a href="/">{{ site.title }}</a></h2>
+        <p><em>{{ site.description }}</em></p>
+    </header>
 
     <hr>
 
-    <!-- Liquid tag: This is where page content gets injected -->
     {{ content }}
 
     <hr>
 
     <footer>
-        <p>&copy; 2026 My Static Site</p>
+        <p>&copy; 2026 {{ site.author }}. Built with Jekyll.</p>
     </footer>
 
 </body>

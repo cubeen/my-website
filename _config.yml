@@ -1,0 +1,6 @@
+title: Jakub's Digital Garden
+description: A simple static site powered by Jekyll and GitHub Pages.
+author: Jakub
+
+# Jekyll build settings
+markdown: kramdown
